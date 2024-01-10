@@ -242,8 +242,8 @@ The client/browser can decide, depending on the rendering resolution, the number
 
       if (simdSupported) {
         document.getElementById('simd_message').innerText = txt + "SIMD is detected. (But not used)\n";
-        // load_simd_module();
-        load_generic_module();
+        load_simd_module();
+        // load_generic_module();
       } else {
         document.getElementById('simd_message').innerText = txt + "SIMD is not detected. \n";
         load_generic_module();
