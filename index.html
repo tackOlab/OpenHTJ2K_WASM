@@ -224,7 +224,7 @@ The client/browser can decide, depending on the rendering resolution, the number
       var ctx = canvas.getContext("2d");
       ctx.clearRect(0, 0, width, height);
       var cimg = ctx.createImageData(width, height);
-console.log(cimg);
+			//	console.log(cimg);
       var down_shift = (bit_depth >= 8 ? bit_depth - 8 : 0) | 0;
       var up_shift = (bit_depth < 8 ? 8 - bit_depth : 0) | 0;
       var half = (bit_depth > 8 ? (1 << (down_shift - 1)) : 0) | 0;
